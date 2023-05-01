@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.svg">
+    <title>KR - Kivotos Railway Company</title>
+    
+    <style>
+        .arrowWrap {
+            height: 68px;
+        }
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 2em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .arrow img {
+            animation: arrow 1s infinite;
+            filter: brightness(500%);
+        }
+        @keyframes arrow {
+            0% {
+                transform: none;
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: none;
+            }
+        }
+
+
+
+        body {
+            margin: 0;
+            transition: .3s all;
+            font-family: "A-OTF UD Shin Go Pr6N","MO UDShinGo SC Gb4","Source Han Sans SC","Noto Sans SC",sans-serif;
+        }
+        a {
+            color: #255078;
+        }
+        a:hover {
+            color: #333;
+        }
+        header {
+            height: 82px;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            position: fixed;
+
+            display: flex;
+            align-items: center;
+
+            border-bottom: 2px solid #BAC3C8;
+        }
+        .header-inner {
+            margin: 0 3em;
+            width: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-img {
+            height: 30px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+        }
+        .link-list {
+            list-style: none;
+            display: flex;
+            flex-flow: column nowrap;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-list a,.link-list a {
+            color: #333;
+            text-decoration: none;
+            transition: .3s all;
+        }
+        .nav-list a:hover,.link-list a:hover {
+            color: #aaa;
+            text-decoration: none;
+            transition: .3s all;
+        }
+        .menu-icon {
+            height: 12px;
+        }
+        .hero-bg {
+            height: 100vh;
+            background: url(https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/bg.efa5d323.jpg) no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-logo {
+            width: 95%;
+            max-width: 1200px;
+        }
+        .main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .passenger-info h2 {
+            font-weight: 500;
+            font-size: 2em;
+            margin: 0;
+        }
+        .info-title {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 1em;
+            align-items: baseline;
+        }
+        .translation {
+            color: #777;
+        }
+        .info-card {
+            min-height: 300px;
+            border-radius: 6px;
+            background: no-repeat linear-gradient(90deg, rgba(37, 80, 120, 0.65) 0%, rgba(37, 80, 120, 0) 100%), url(img/TicketMachine.png);
+        }
+        h3 {
+            color: #fff;
+            font-weight: 500;
+            font-size: 3.5em;
+            margin: 0;
+        }
+        .card-content {
+            margin: 3em;
+        }
+
+        footer {
+            height: 400px;
+
+            background: #F6FAFF;
+            display: flex;
+            align-items: center;
+
+        }
+        .footer-inner {
+            width: 90%;
+            max-width: 1600px;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 6em;
+            margin: auto;
+            align-items: flex-start;
+        }
+        .footer-logo {
+            height: 48px;
+        }
+        .footer-desc p {
+            width: 450px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <img src="img/KR.svg" alt="" class="logo-img">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="">旅客服务</a></li>
+                    <li><a href="">集团信息</a></li>
+                    <li><img src="img/menu.svg" alt="" class="menu-icon"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-wrapper">
+        <div class="hero-bg">
+            <img src="img/KIVOTOS.svg" alt="" class="hero-logo">
+            <h2 style="font-weight: 400;color:rgba(255, 255, 255, 0.65);margin-top: 6em;letter-spacing: 0.2ch;">欢迎造访奇普托斯铁道官网。</h2>
+            <div class="arrowWrap"><div class="arrow"><img src="img/arrow.svg" alt=""></div></div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="passenger-info">
+            <div class="info-title">            
+                <h2>搭乘奇普托斯铁道</h2>
+                <span class="translation">Using Kivotos Railway</span>
+            </div>
+            <div class="info-card">
+                <div class="card-content">
+                    <h3>线网地图</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Line Map</span>    
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="card-content">
+                    <h3>购票指南</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Buying Ticket</span>    
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="card-content">
+                    <h3>储值卡</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Transit Card</span>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-desc">
+                <img src="img/KR_R.svg" alt="" class="footer-logo">
+                <p style="border-bottom: 1px solid #aaa;">奇普托斯铁道株式会社于2077年3月9日成立，致力于通过现代化技术和优质服务为广大市民提供世界一流的交通服务。</p>
+                <p><b>总部地址</b> <br> 奇普托斯铁道大楼 Kivotos Railway HQ <br> 奇普托斯千年科学学院自治区 3-22-4</p>
+                <a href="mailto://hachi@millenniumdesign.club">用 E-Mail 联系我们</a>
+            </div>
+            <div class="footer-link">
+                <b>链接</b>
+                <ul class="link-list">
+                    <li><a href="">旅客服务</a></li>
+                    <li><a href="">集团信息</a></li>
+                </ul>
+                <span class="translation">本网站为游戏「蔚蓝档案」的同人作品。官方素材 © NEXON Korea Corp. 2021</span>
+            </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
