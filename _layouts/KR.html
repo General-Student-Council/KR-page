@@ -17,6 +17,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <style>
+        @font-face {
+            font-family: 'MO UDShinGo SC Gb4';
+            src: url(fonts/MO-UDShinGoSCGb4-Reg.otf);
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'MO UDShinGo SC Gb4';
+            src: url(fonts/MO-UDShinGoSCGb4-Med.otf);
+            font-weight: 500;
+        }
+        @font-face {
+            font-family: 'MO UDShinGo SC Gb4';
+            src: url(fonts/MO-UDShinGoSCGb4-Bol.otf);
+            font-weight: bold;
+        }
+        @font-face {
+            font-family: 'MO UDShinGo SC Gb4';
+            src: url(fonts/MO-UDShinGoSCGb4-DeB.otf);
+            font-weight: 550;
+        }
+        @font-face {
+            font-family: 'A-OTF UD Shin Go Pr6N';
+            src: url(fonts/A-OTF-UDShinGoPr6N-Regular.otf);
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'A-OTF UD Shin Go Pr6N';
+            src: url(fonts/A-OTF-UDShinGoPr6N-Medium.otf);
+            font-weight: 500;
+        }
+        @font-face {
+            font-family: 'A-OTF UD Shin Go Pr6N';
+            src: url(fonts/A-OTF-UDShinGoPr6N-DemiBold.otf);
+            font-weight: 550;
+        }
+        @font-face {
+            font-family: 'A-OTF UD Shin Go Pr6N';
+            src: url(fonts/A-OTF-UDShinGoPr6N-Bold.otf);
+            font-weight: bold;
+        }
+        
         .arrowWrap {
             height: 68px;
         }
@@ -60,7 +101,7 @@
         }
         header {
             height: 82px;
-            width: 100%;
+            width: 100vw;
             background-color: #fff;
             color: #333;
             position: fixed;
@@ -144,14 +185,14 @@
 
         footer {
             min-height: 400px;
-
+            width: 100vw;
             background: url('img/footer_bg.png'),#79CBF5 no-repeat;
             display: flex;
             align-items: center;
 
         }
         .footer-inner {
-            width: 90%;
+            width: 90vw;
             max-width: 1600px;
             display: flex;
             flex-flow: row wrap;
@@ -184,13 +225,14 @@
         }
         }
         @media only screen and (max-width: 800px) {
-          .footer-inner {
+        .footer-desc p {
+            width: fit-content;
+        }
+          .info-title {
             display: flex;
             flex-flow: column nowrap;
-            gap: 3em;
-            margin: 3em auto;
-            align-items: flex-start;
-            justify-content: space-between;
+            gap: 1em;
+            align-items: baseline;
         }
           .nav-list a {
               display: none;
