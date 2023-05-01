@@ -67,12 +67,6 @@ layout: KR
             font-size: 2em;
             margin: 0;
         }
-        .info-title {
-            display: flex;
-            flex-flow: row nowrap;
-            gap: 1em;
-            align-items: baseline;
-        }
         .translation {
             color: #777;
         }
@@ -104,6 +98,9 @@ layout: KR
         .card-content {
             margin: 3em;
         }
+        .info-card a {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -121,22 +118,26 @@ layout: KR
                 <span class="translation">Using Kivotos Railway</span>
             </div>
             <div class="info-card line-map">
-                <div class="card-content">
-                    <h3>线网地图</h3>
-                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Line Map</span>    
-                </div>
+                <a href="passenger.html#line-map">
+                    <div class="card-content">
+                        <h3>线网地图</h3>
+                        <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Line Map</span>    
+                    </div>
+                </a>
             </div>
             <div class="info-card get-ticket">
-                <div class="card-content">
+                <a href="passenger.html#ticket-guide">                <div class="card-content">
                     <h3>购票指南</h3>
                     <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Ticket Guide</span>    
-                </div>
+                </div></a>
+
             </div>
             <div class="info-card suica">
-                <div class="card-content">
+                <a href="passenger.html#transit-card">                <div class="card-content">
                     <h3>储值卡</h3>
                     <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Transit Card</span>    
-                </div>
+                </div></a>
+
             </div>
         </div>
         <div class="company-info">
@@ -145,22 +146,25 @@ layout: KR
                 <span class="translation">About Kivotos Railway</span>
             </div>
             <div class="info-card line-map">
-                <div class="card-content">
+                <a href="company.html#company-history">               <div class="card-content">
                     <h3>会社历史</h3>
-                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Line Map</span>    
-                </div>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Company History</span>    
+                </div></a>
+ 
             </div>
             <div class="info-card get-ticket">
-                <div class="card-content">
+                <a href="company.html#social-responsibility">                <div class="card-content">
                     <h3>社会责任</h3>
-                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Buying Ticket</span>    
-                </div>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Social Responsibility</span>    
+                </div></a>
+
             </div>
             <div class="info-card suica">
-                <div class="card-content">
+                <a href="company.html#sustainable-development">                <div class="card-content">
                     <h3>可持续发展</h3>
-                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Transit Card</span>    
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Sustainable Development</span>    
                 </div>
+</a>
             </div>
         </div>
     </section>
