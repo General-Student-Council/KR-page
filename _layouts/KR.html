@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ECD49MNC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-B6ECD49MNC');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .arrowWrap {
+            height: 68px;
+        }
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 2em;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .arrow img {
+            animation: arrow 1s infinite;
+            filter: brightness(500%);
+        }
+        @keyframes arrow {
+            0% {
+                transform: none;
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: none;
+            }
+        }
+
+
+
+        body {
+            margin: 0;
+            transition: .3s all;
+            font-family: "A-OTF UD Shin Go Pr6N","MO UDShinGo SC Gb4","Source Han Sans SC","Noto Sans SC",sans-serif;
+        }
+        a {
+            color: #255078;
+        }
+        a:hover {
+            color: #333;
+        }
+        header {
+            height: 82px;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            position: fixed;
+
+            display: flex;
+            align-items: center;
+
+            border-bottom: 2px solid #BAC3C8;
+        }
+        .header-inner {
+            margin: 0 3em;
+            width: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-img {
+            height: 30px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+        }
+        .link-list {
+            list-style: none;
+            display: flex;
+            flex-flow: column nowrap;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-list a,.link-list a {
+            color: #333;
+            text-decoration: none;
+            transition: .3s all;
+        }
+        .nav-list a:hover,.link-list a:hover {
+            color: #aaa;
+            text-decoration: none;
+            transition: .3s all;
+        }
+        .menu-icon {
+            height: 12px;
+        }
+        .hero-bg {
+            height: 100vh;
+            background: url(https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/bg.efa5d323.jpg) no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-bg h2 {
+          text-align: center;
+        }
+        .main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 2em;
+            margin: 0;
+        }
+        .info-title {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 1em;
+            align-items: baseline;
+        }
+        .translation {
+            color: #777;
+        }
+
+        footer {
+            min-height: 400px;
+
+            background: url('img/footer_bg.png'),#79CBF5 no-repeat;
+            display: flex;
+            align-items: center;
+
+        }
+        .footer-inner {
+            width: 90%;
+            max-width: 1600px;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 6em;
+            margin: auto;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .footer-logo {
+            height: 48px;
+        }
+        .footer-desc p {
+            width: 450px;
+        }
+
+        .nav-list button {
+              display: none;
+        }
+        .menu {
+              display: none;
+        }
+        @media only screen and (max-width: 1550px) {
+          .footer-inner {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 3em;
+            margin: 3em auto;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        }
+        @media only screen and (max-width: 800px) {
+          .footer-inner {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 3em;
+            margin: 3em auto;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+          .nav-list a {
+              display: none;
+          }
+          .nav-list button {
+              display: block;
+              border: none;
+              background: none;
+              filter: brightness(350%);
+          }
+          .nav-list button:hover {
+              filter: brightness(100%);
+          }
+          .show-menu {
+            display: block;
+              position: absolute;
+              background-color: #eee;
+              width: 100%;
+              top: 82px;
+              z-index: 100;
+          }
+          .show-menu ul {
+              margin: 1em 3em;
+          }
+          .menu-nav {
+            display: flex;
+            flex-flow: column nowrap;
+            list-style: none;
+            font-size: 1.5em;
+            z-index: 100;
+          }
+          .menu-nav a{
+            text-decoration: none;
+            color: #255078;
+          }
+          .menu-nav a:hover {
+            color: #777;
+          }
+        }
+        .short {
+          display: none;
+        }
+        @media only screen and (max-width: 600px) {
+          .long {
+            display: none;
+          }
+          .short {
+            display: block;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    {% include KR_nav.html %}
+    <section>
+      {{ content }}
+    </section>
+    {% include KR_footer.html %}
+  </body>
+</html>

@@ -1,3 +1,6 @@
+---
+layout: KR
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -118,7 +121,10 @@
             max-width: 1200px;
             margin: auto;
         }
-        .passenger-info h2 {
+        .passenger-info, .company-info {
+            margin-bottom: 3em;
+        }
+        h2 {
             font-weight: 500;
             font-size: 2em;
             margin: 0;
@@ -135,8 +141,22 @@
         .info-card {
             min-height: 300px;
             border-radius: 6px;
+        }
+
+        .line-map {
+            background: center no-repeat linear-gradient(90deg, rgba(37, 80, 120, 0.65) 0%, rgba(37, 80, 120, 0) 100%), url(img/LineMap.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .get-ticket {
             background: no-repeat linear-gradient(90deg, rgba(37, 80, 120, 0.65) 0%, rgba(37, 80, 120, 0) 100%), url(img/TicketMachine.png);
         }
+        .suica {
+            background: no-repeat linear-gradient(90deg, rgba(37, 80, 120, 0.65) 0%, rgba(37, 80, 120, 0) 100%), url(img/Suica.png);
+            background-size: cover;
+            background-position: center;
+        }
+
         h3 {
             color: #fff;
             font-weight: 500;
@@ -150,7 +170,7 @@
         footer {
             height: 400px;
 
-            background: #F6FAFF;
+            background: url('img/footer_bg.png'),#79CBF5 no-repeat;
             display: flex;
             align-items: center;
 
@@ -163,6 +183,7 @@
             gap: 6em;
             margin: auto;
             align-items: flex-start;
+            justify-content: space-between;
         }
         .footer-logo {
             height: 48px;
@@ -173,18 +194,6 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <img src="img/KR.svg" alt="" class="logo-img">
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="">旅客服务</a></li>
-                    <li><a href="">集团信息</a></li>
-                    <li><img src="img/menu.svg" alt="" class="menu-icon"></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <section class="hero-wrapper">
         <div class="hero-bg">
             <img src="img/KIVOTOS.svg" alt="" class="hero-logo">
@@ -198,45 +207,49 @@
                 <h2>搭乘奇普托斯铁道</h2>
                 <span class="translation">Using Kivotos Railway</span>
             </div>
-            <div class="info-card">
+            <div class="info-card line-map">
                 <div class="card-content">
                     <h3>线网地图</h3>
                     <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Line Map</span>    
                 </div>
             </div>
-            <div class="info-card">
+            <div class="info-card get-ticket">
                 <div class="card-content">
                     <h3>购票指南</h3>
-                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Buying Ticket</span>    
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Ticket Guide</span>    
                 </div>
             </div>
-            <div class="info-card">
+            <div class="info-card suica">
                 <div class="card-content">
                     <h3>储值卡</h3>
                     <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Transit Card</span>    
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-desc">
-                <img src="img/KR_R.svg" alt="" class="footer-logo">
-                <p style="border-bottom: 1px solid #aaa;">奇普托斯铁道株式会社于2077年3月9日成立，致力于通过现代化技术和优质服务为广大市民提供世界一流的交通服务。</p>
-                <p><b>总部地址</b> <br> 奇普托斯铁道大楼 Kivotos Railway HQ <br> 奇普托斯千年科学学院自治区 3-22-4</p>
-                <a href="mailto://hachi@millenniumdesign.club">用 E-Mail 联系我们</a>
+        <div class="company-info">
+            <div class="info-title">            
+                <h2>了解奇普托斯铁道</h2>
+                <span class="translation">About Kivotos Railway</span>
             </div>
-            <div class="footer-link">
-                <b>链接</b>
-                <ul class="link-list">
-                    <li><a href="">旅客服务</a></li>
-                    <li><a href="">集团信息</a></li>
-                </ul>
-                <span class="translation">本网站为游戏「蔚蓝档案」的同人作品。官方素材 © NEXON Korea Corp. 2021</span>
-            </nav>
+            <div class="info-card line-map">
+                <div class="card-content">
+                    <h3>会社历史</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Line Map</span>    
+                </div>
+            </div>
+            <div class="info-card get-ticket">
+                <div class="card-content">
+                    <h3>社会责任</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Buying Ticket</span>    
+                </div>
+            </div>
+            <div class="info-card suica">
+                <div class="card-content">
+                    <h3>可持续发展</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Transit Card</span>    
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
 </body>
 </html>
