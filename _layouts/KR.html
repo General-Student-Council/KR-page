@@ -102,7 +102,8 @@
         header {
             height: 82px;
             width: 100vw;
-            background-color: #fff;
+            background-color: #fffffff0;
+            backdrop-filter: blur(16px) saturate(150%);
             color: #333;
             position: fixed;
 
@@ -120,7 +121,8 @@
             justify-content: space-between;
         }
         .logo-img {
-            height: 30px;
+            height: 36px;
+            display: flex;
         }
         .nav-list {
             list-style: none;
@@ -135,7 +137,8 @@
             display: flex;
             flex-flow: column nowrap;
             margin: 0;
-            padding: 0;
+            padding-left: .5em;
+            border-left: 3px solid #333;
         }
         .nav-list a,.link-list a {
             color: #333;
@@ -186,7 +189,7 @@
         footer {
             min-height: 400px;
             width: 100vw;
-            background: url('img/footer_bg.png'),#79CBF5 no-repeat;
+            background: #f0f0f0;
             display: flex;
             align-items: center;
 
@@ -267,6 +270,9 @@
           .menu-nav a{
             text-decoration: none;
             color: #255078;
+            border-left: 12px solid #255078;
+            padding-left: .5em;
+            font-weight: 600;
           }
           .menu-nav a:hover {
             color: #777;
