@@ -1,110 +1,172 @@
 ---
-count: 147
-rectime: 2022.5.2
+layout: KR
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://millenniumdesign.club/KR/">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.count }} 发，出了优香体操服。 / 千年设计社 MDC</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6ECD49MNC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <link rel="shortcut icon" href="asset/image/favicon.svg">
+    <title>KR - Kivotos Railway Company</title>
     
-        gtag('config', 'G-B6ECD49MNC');
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@700&family=Noto+Serif+HK:wght@900&display=swap" rel="stylesheet">
     <style>
-        body {
-            height: 100vh;
-            font-family: "Noto Sans HK";
-            background:url("/assets/images/yuuka-ai.png") no-repeat;
-            background-size: cover;
-            margin: 0;
-            overflow: hidden;
-            line-break: none;
+
+
+        .arrowWrap {
+            height: 68px;
         }
-        .title {
-            font-size: 10em;
-            font-family: Noto Serif HK;
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            text-shadow: 0px 0px 16px #BBE2FF;
-            width: max-content;
-        }
-        .footer {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(32px) saturate(150%);
-            filter: drop-shadow( 0px 4px 8px rgba(0,0,0,0.5));
-            color: #000;
-            position: fixed;
-            bottom: 24px;
+            bottom: 2em;
             left: 50%;
             transform: translateX(-50%);
-            padding: 12px;
-            width: 95%;
-            margin: auto;
+        }
+        .arrow img {
+            animation: arrow 1s infinite;
+            filter: brightness(500%);
+        }
+        @keyframes arrow {
+            0% {
+                transform: none;
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: none;
+            }
+        }
 
-            border-radius: 24px;
-
+        .hero-bg {
+            height: 100vh;
+            background: url(https://webcnstatic.yostar.net/ba_cn_web/prod/web/assets/bg.efa5d323.jpg) no-repeat;
+            background-size: cover;
             display: flex;
-            flex-flow: row nowrap;
-            gap: 12px;
+            flex-flow: column nowrap;
             align-items: center;
+            justify-content: center;
         }
-        .logo {
-            transition: all .3s;
+        .hero-logo {
+            width: 95%;
+            max-width: 1200px;
         }
-        .logo:hover {
-            display: block;
-            transform: translateY(-4px);
-            filter: drop-shadow( 0px 4px 4px rgba(0,0,0,0.5));
-            transition: all .3s;
+        .main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
         }
-        a {
-            color: #BBE2FF;
+        .passenger-info, .company-info {
+            margin-bottom: 3em;
         }
-        @media only screen and (max-width:1280px) {
-            .title {
-                font-size: 6em;
-            }
+        h2 {
+            font-weight: 500;
+            font-size: 2em;
+            margin: 0;
         }
-        @media only screen and (max-width:800px) {
-            .title {
-                font-size: 5em;
-            }
+        .translation {
+            color: #777;
         }
-        @media only screen and (max-width:650px) {
-            .title {
-                font-size: 4em;
-            }
+        .info-card {
+            min-height: 300px;
+            border-radius: 6px;
         }
-        @media only screen and (max-width:500px) {
-            .title {
-                font-size: 3em;
-            }
+
+        .line-map {
+            background: center no-repeat linear-gradient(90deg, rgba(37, 80, 120, 0.65) 0%, rgba(37, 80, 120, 0) 100%), url(asset/image/LineMap.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .get-ticket {
+            background: no-repeat linear-gradient(90deg, rgba(37, 80, 120, 0.65) 0%, rgba(37, 80, 120, 0) 100%), url(asset/image/TicketMachine.png);
+        }
+        .suica {
+            background: no-repeat linear-gradient(90deg, rgba(37, 80, 120, 0.65) 0%, rgba(37, 80, 120, 0) 100%), url(asset/image/Suica.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        h3 {
+            color: #fff;
+            font-weight: 500;
+            font-size: 3.5em;
+            margin: 0;
+        }
+        .card-content {
+            margin: 3em;
+        }
+        .info-card a {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="title">
-        <span>{{page.count}} 发，</span><br>
-        <span>出貨。</span>
-    </div>
-    <div class="footer">
-        <a href="/index" class="logo"><img src="assets/images/MDC.svg" alt="" style="height: 64px;"></a>
-        <a href="/KR/" class="logo"><img src="assets/images/KR.svg" alt="" style="height: 64px;"></a>
-        <span>这里是千年设计社（仮）官方网站。</span>
-    </div>
+    <section class="hero-wrapper">
+        <div class="hero-bg">
+            <img src="asset/image/KIVOTOS.svg" alt="" class="hero-logo">
+            <h2 style="font-weight: 400;color:rgba(255, 255, 255, 0.65);margin-top: 6em;letter-spacing: 0.2ch;">欢迎造访奇普托斯铁道官网。</h2>
+            <div class="arrowWrap"><div class="arrow"><img src="asset/image/arrow.svg" alt=""></div></div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="passenger-info">
+            <div class="info-title">            
+                <h2>搭乘奇普托斯铁道</h2>
+                <span class="translation">Using Kivotos Railway</span>
+            </div>
+            <div class="info-card line-map">
+                <a href="passenger.html#line-map">
+                    <div class="card-content">
+                        <h3>线网地图</h3>
+                        <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Line Map</span>    
+                    </div>
+                </a>
+            </div>
+            <div class="info-card get-ticket">
+                <a href="passenger.html#ticket-guide">                <div class="card-content">
+                    <h3>购票指南</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Ticket Guide</span>    
+                </div></a>
+
+            </div>
+            <div class="info-card suica">
+                <a href="passenger.html#transit-card">                <div class="card-content">
+                    <h3>储值卡</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Transit Card</span>    
+                </div></a>
+
+            </div>
+        </div>
+        <div class="company-info">
+            <div class="info-title">            
+                <h2>了解奇普托斯铁道</h2>
+                <span class="translation">About Kivotos Railway</span>
+            </div>
+            <div class="info-card line-map">
+                <a href="company.html#company-history">               <div class="card-content">
+                    <h3>会社历史</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Company History</span>    
+                </div></a>
+ 
+            </div>
+            <div class="info-card get-ticket">
+                <a href="company.html#social-responsibility">                <div class="card-content">
+                    <h3>社会责任</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Social Responsibility</span>    
+                </div></a>
+
+            </div>
+            <div class="info-card suica">
+                <a href="company.html#sustainable-development">                <div class="card-content">
+                    <h3>可持续发展</h3>
+                    <span class="translation" style="color:rgba(255, 255, 255, 0.65)">Sustainable Development</span>    
+                </div>
+</a>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
